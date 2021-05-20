@@ -1,0 +1,297 @@
+/*============================================ wrapper===================================================== */
+
+#wrapper {
+    width: 1000px;   
+    margin: 20px auto;
+}
+
+/*============================================ wrapper===================================================== */
+
+/*============================================ menu ======================================================= */
+
+
+#nav {
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu > a {
+    text-decoration: none;
+}
+
+#menu > a > li {
+    font-size: 30px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color:red;
+}
+
+.active {
+    color: blue;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/*============================================ menu ======================================================= */
+
+
+/*============================================ word_section =============================================== */
+
+#word_section {
+    height: 400px;
+    border: 1px solid black;
+    margin-top: 150px;
+
+    position: relative;
+}
+
+#select_wrapper { 
+    width: 200px;
+    height: 140px;
+
+    margin: 0 auto 0;
+}
+
+#select_wrapper p { 
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.select {
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+}
+
+#word_section_select_a_list {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px auto;
+}
+
+#word_section_click_on_start {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+#word_section_click_on_start_new_words {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 140px;
+}
+
+#word_section_main {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 0;
+
+    font-family: 'Times New Roman';
+}
+
+#word_section_how_to_read {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Times New Roman';
+
+    margin-bottom: 0;
+
+    display: none;
+}
+
+#word_section_translation {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman';
+
+    display: none;
+}
+
+#word_section_additional_information {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+
+    display: none;
+
+    position: absolute;
+
+    right: 15px; 
+    bottom: -15px;
+}
+
+#word_section_number_of_words {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+
+    display: none;
+
+    position: absolute;
+
+    left: 15px; 
+    bottom: -15px;
+}
+
+#word_section_start_over {
+    width: 250px;
+    height: 50px;
+    font-size: 35px;
+    font-weight: bold;
+
+    display: none;
+
+    margin: 40px auto;
+}
+
+#button_start_over {
+    width: 250px;
+    height: 50px;
+}
+
+/*============================================ word_section =============================================== */
+
+/*============================================ button_section ============================================= */
+
+#button_section {
+    position: relative;
+}
+
+#button_section_start_btn1_1 {
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: block;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#button_section_the_next_word_btn1_2 {
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#button_section_show_how_it_reads_btn2_1 {
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+#button_section_hide_how_to_read_btn2_2 {
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+
+#button_section_show_additional_information_btn3_1 {
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#button_section_hide_additional_information_btn3_2 {
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+/*============================================ button_section ============================================= */
+
+/*============================= check for the presence of a word ===========================================*/
+
+.margin_left {
+    margin-left: 10px;
+}
+
+#enter_the_word {
+    font-size: 30px;
+
+    margin: 20px 10px;
+}
+
+#display_flex {
+    display: flex;
+}
+
+#div_1 p {
+    font-size: 20px;
+}
+
+#div_2 p {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-left: 20px;
+}
+
+/*============================= check for the presence of a word ===========================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
