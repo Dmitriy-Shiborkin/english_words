@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>English words</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" type="text/css" href="style/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/media screen (max-width 420px).css">
-    
-    
-</head>
+    <link rel="stylesheet" type="text/css" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/media screen (max-width 420px).css" />
+  </head>
 
-<body>
-    
+  <body>
+
     <div id="wrapper">
 
         <nav id="nav">
@@ -40,38 +38,100 @@
             </div>
 
             <ul id="menu">
-                <a href="index.html" class="active"><li >Слова</li></a>
+                <a href="index.html" class="active"><li>Слова</li></a>
                 <a href="new words.html"><li>Новые слова</li></a>
                 <a href="checking the word.html"><li>Проверка слова</li></a>
+                <a href="grammar.html"><li>Грамматика</li></a>
             </ul>
-            
+
         </nav>
 
         <main>
 
-            <section id="word_section">
+            <section>
+
+                <select id="language_switch">
+                    <option value="English Russian">En - Ru</option>
+                    <option value="Russian English">Ru - En</option>
+                </select>
+
+            </section>
+
+            <button type="button" id="button_section_change_mode_1">Сменить режим</button>
+            <button type="button" id="button_section_change_mode_2">Сменить режим</button>
+
+            <button type="button" id="button_section_multiple_values_1">Неск. значений</button>
+            <button type="button" id="button_section_multiple_values_2">Неск. значений</button>
+
+            <button type="button" id="button_section_number_of_words_1">№</button>
+            <button type="button" id="button_section_number_of_words_2">№</button>
+
+            <section id="word_section_1">
+
+                <div>
+
+                    <div><input type="checkbox" id="singular_noun" class="checkbox"><span class="checkbox_text">сущ(еч)</span></input></div>
+                    <div><input type="checkbox" id="plural_noun" class="checkbox"><span class="checkbox_text">сущ(мч)</span></input></div>
+                    <div><input type="checkbox" id="irregular_nouns" class="checkbox"><span class="checkbox_text">непр сущ</span></input></div>
+                    <div><input type="checkbox" id="adjectives" class="checkbox"><span class="checkbox_text">прил</span></input></div>
+                    <div><input type="checkbox" id="verb_1" class="checkbox"><span class="checkbox_text">глаг(1)</span></input></div>
+                    <div><input type="checkbox" id="verb_2_3" class="checkbox"><span class="checkbox_text">глаг(2,3)</span></input></div>
+                    <div><input type="checkbox" id="verb_ing" class="checkbox"><span class="checkbox_text">глаг[ing]</span></input></div>
+                    <div><input type="checkbox" id="verb_s" class="checkbox"><span class="checkbox_text">глаг[s]</span></input></div>
+                    <div><input type="checkbox" id="irregular_verbs_1" class="checkbox"><span class="checkbox_text">непр глаг(1)</span</input></div>
+                    <div><input type="checkbox" id="irregular_verbs_2_3" class="checkbox"><span class="checkbox_text">непр глаг(2,3)</span></input></div>
+                    <div><input type="checkbox" id="irregular_verbs_ing" class="checkbox"><span class="checkbox_text">непр глаг[ing]</span></input></div>
+                    <div><input type="checkbox" id="irregular_verbs_s" class="checkbox"><span class="checkbox_text">непр глаг[s]</span></input></div>
+                    <div><input type="checkbox" id="adverbs" class="checkbox"><span class="checkbox_text">нареч</span></input></div>
+                    <div><input type="checkbox" id="prepositions" class="checkbox"><span class="checkbox_text">предл</span></input></div>
+                    <div><input type="checkbox" id="pronouns" class="checkbox"><span class="checkbox_text">местоим</span></input></div>
+
+                </div>
+
+                <div>
+
+                    <div><input type="checkbox" id="numbers" class="checkbox"><span class="checkbox_text">числа</span></input></div>
+                    <div><input type="checkbox" id="wrong_degrees_of_comparison" class="checkbox"><span class="checkbox_text">непр степ сравн</span></input></div>
+                    <div><input type="checkbox" id="union" class="checkbox"><span class="checkbox_text">союзы</span></input></div>
+                    <div><input type="checkbox" id="countries" class="checkbox"><span class="checkbox_text">страны</span></input></div>
+                    <div><input type="checkbox" id="nationalities" class="checkbox"><span class="checkbox_text">национальности</span></input></div>
+                    <div><input type="checkbox" id="modal_verbs" class="checkbox"><span class="checkbox_text">модал глаг и их эквивал</span></input></div>
+                    <div><input type="checkbox" id="auxiliary_verbs" class="checkbox"><span class="checkbox_text">вспом глаг</span></input></div>
+                    <div><input type="checkbox" id="grammatical_constructions" class="checkbox"><span class="checkbox_text">грамм констр</span></input></div>
+
+                    
+
+
+                </div>
+
+            </section>
+
+            <section id="word_section_2">
 
                 <p id="word_section_select_a_list">Введите числа</p>
 
                 <div id="select_wrapper">
-
                     <p>от 1</p>
 
-                    <input type="text" id="select1" class="select">
+                    <input type="text" id="select1" class="select" />
 
                     <p id="max_value"></p>
 
-                    <input type="text" id="select2" class="select">
-
+                    <input type="text" id="select2" class="select" />
                 </div>
 
                 <p id="word_section_click_on_start">Нажмите на старт</p>
 
-                <p id="word_section_main"></p>
-                <p id="word_section_how_to_read"></p>
-                <p id="word_section_translation"></p>
-                <p id="word_section_additional_information"></p>
                 <p id="word_section_number_of_words"></p>
+                <p id="word_section_main"></p>
+                <p id="word_section_main1"></p>
+                <p id="word_section_translation_1"></p>
+                <p id="word_section_translation_2"></p>
+                <p id="word_section_translation_3"></p>
+                <p id="word_section_additional_information"></p>
+                <p id="word_section_additional_information1"></p>
+                <p id="word_section_how_to_read"></p>
+                <p id="word_section_how_to_read1"></p>
 
                 <div id="word_section_start_over">
                     <button type="button" id="button_start_over">Начать сначала</button>
@@ -81,14 +141,20 @@
 
             <section id="button_section">
 
-                <button type="button" id="button_section_start_btn1_1" >Старт</button>
-                <button type="button" id="button_section_the_next_word_btn1_2" >Следующее слово</button>
+                <button type="button" id="button_section_how_to_read_1">Как читается</button>
+                <button type="button" id="button_section_how_to_read_2">Как читается</button>
 
-                <button type="button" id="button_section_show_how_it_reads_btn2_1" >Показать как читается</button>
-                <button type="button" id="button_section_hide_how_to_read_btn2_2" >Скрыть как читается</button>
+                <button type="button" id="button_section_repeat_the_word">Повторить слово</button>
 
-                <button type="button" id="button_section_show_additional_information_btn3_1" >Показать доп. информацию</button>
-                <button type="button" id="button_section_hide_additional_information_btn3_2" >Скрыть доп. информацию</button>
+                <button type="button" id="button_section_start">Старт</button>
+                <button type="button" id="button_section_the_next_word_1">Следующее слово</button>
+                <button type="button" id="button_section_the_next_word_2">Следующее слово</button>
+
+                <button type="button" id="button_section_translate_1">Перевод и как читается</button>
+                <button type="button" id="button_section_translate_2">Перевод и как читается</button>
+
+                <button type="button" id="button_section_additional_information_1">Доп. информация</button>
+                <button type="button" id="button_section_additional_information_2">Доп. информация</button>
 
             </section>
 
@@ -96,9 +162,6 @@
 
     </div>
 
-    <script src="scripts/index.js" ></script>
-
-</body>
-
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
-

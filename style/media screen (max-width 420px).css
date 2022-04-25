@@ -66,7 +66,7 @@
 /*============================================ menu ======================================================= */
 
 
-/*============================================ word_section =============================================== */
+/*============================================ word_section_2 =============================================== */
 
   #word_section_select_a_list {
       font-size: 40px;
@@ -83,7 +83,7 @@
       margin-top: 100px;
   }
 
-  #word_section {
+  #word_section_2 {
       width: 100%;   
       height: 380px;
       margin: 0;
@@ -94,12 +94,12 @@
       margin-bottom: 0;   
   }
   
-  #word_section_translation {
+  #word_section_translation_1 {
       font-size: 40px;    
       margin-top: 15px;   
   }
 
-/*============================================ word_section =============================================== */
+/*============================================ word_section_2 =============================================== */
 
 /*============================================ button_section ============================================= */
 
@@ -108,26 +108,17 @@
       flex-direction: row;
   }
 
-  #button_section_start_btn1_1 {
+  #button_section_start {
       width: 100%;
       font-size: 20px;
   }
   
-  #button_section_the_next_word_btn1_2 {
+  #button_section_the_next_word_1 {
       width: 100%;
       font-size: 18px;
   }
   
-  #button_section_show_how_it_reads_btn2_1 {
-      width: 100%;
-      font-size: 18px;
-  
-      position: absolute;
-      top: 60px;
-      left: 0;
-  }
-  
-  #button_section_hide_how_to_read_btn2_2 {
+  #button_section_translate_1 {
       width: 100%;
       font-size: 18px;
   
@@ -136,7 +127,16 @@
       left: 0;
   }
   
-  #button_section_show_additional_information_btn3_1 {
+  #button_section_translate_2 {
+      width: 100%;
+      font-size: 18px;
+  
+      position: absolute;
+      top: 60px;
+      left: 0;
+  }
+  
+  #button_section_additional_information_1 {
       width: 100%;
       font-size: 18px;
   
@@ -144,7 +144,7 @@
       top: 110px;
   }
   
-  #button_section_hide_additional_information_btn3_2 {
+  #button_section_additional_information_2 {
       width: 100%;
       font-size: 18px;
 

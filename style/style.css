@@ -1,14 +1,14 @@
 /*============================================ wrapper===================================================== */
 
 #wrapper {
-    width: 1000px;   
+    width: 1300px;   
     margin: 20px auto;
+    position: relative;
 }
 
 /*============================================ wrapper===================================================== */
 
 /*============================================ menu ======================================================= */
-
 
 #nav {
     position: relative;
@@ -45,24 +45,43 @@ ul {
     padding-left: 0;
 }
 
+#language_switch {
+    width: 105px;
+    height: 40px;
+    font-size: 25px;
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+}
+
 /*============================================ menu ======================================================= */
 
+/*============================================ word_section_2 =============================================== */
 
-/*============================================ word_section =============================================== */
-
-#word_section {
-    height: 400px;
+#word_section_1 {
+    height: 500px;
     border: 1px solid black;
-    margin-top: 150px;
+    margin-top: 90px;
+
+    display: none;
+    position: relative;
+}
+
+#word_section_2 {
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 90px;
 
     position: relative;
 }
 
 #select_wrapper { 
-    width: 200px;
+    width: 160px;
     height: 140px;
 
-    margin: 0 auto 0;
+    margin: 60px auto 0;
 }
 
 #select_wrapper p { 
@@ -71,7 +90,7 @@ ul {
 }
 
 .select {
-    width: 200px;
+    width: 160px;
     height: 40px;
     font-size: 30px;
 }
@@ -85,7 +104,7 @@ ul {
 #word_section_click_on_start {
     text-align: center;
     font-size: 60px;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 
 #word_section_click_on_start_new_words {
@@ -94,26 +113,55 @@ ul {
     margin-top: 140px;
 }
 
-#word_section_main {
-    font-size: 100px;
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 0;
-
-    font-family: 'Times New Roman';
-}
-
-#word_section_how_to_read {
+#word_section_number_of_words {
     font-size: 30px;
-    text-align: center;
     font-family: 'Times New Roman';
 
-    margin-bottom: 0;
+    position: absolute;
+    top: -20px;
+    right: 10px;
 
     display: none;
 }
 
-#word_section_translation {
+#word_section_main {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 0;
+
+    font-family: 'Times New Roman';
+
+    white-space: pre-wrap;
+}
+
+#word_section_main1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: -10px;
+    
+    font-family: 'Times New Roman';
+
+    white-space: pre-wrap;
+}
+
+#word_section_translation_1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman';
+
+    display: none;
+}
+
+#word_section_translation_2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman';
+
+    display: none;
+}
+
+#word_section_translation_3 {
     font-size: 50px;
     text-align: center;
     font-family: 'Times New Roman';
@@ -129,11 +177,11 @@ ul {
 
     position: absolute;
 
-    right: 15px; 
-    bottom: -15px;
+    right: 10px; 
+    bottom: -20px;
 }
 
-#word_section_number_of_words {
+#word_section_additional_information1 {
     font-size: 30px;
     font-family: 'Times New Roman';
 
@@ -141,8 +189,38 @@ ul {
 
     position: absolute;
 
-    left: 15px; 
-    bottom: -15px;
+    right: 10px; 
+    bottom: -20px;
+
+    white-space: pre-wrap;
+}
+
+#word_section_how_to_read {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+
+    display: none;
+
+    position: absolute;
+
+    left: 10px; 
+    bottom: -20px;
+
+    white-space: pre-wrap;
+}
+
+#word_section_how_to_read1 {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+
+    display: none;
+
+    position: absolute;
+
+    left: 10px; 
+    bottom: -20px;
+
+    white-space: pre-wrap;
 }
 
 #word_section_start_over {
@@ -159,18 +237,59 @@ ul {
 #button_start_over {
     width: 250px;
     height: 50px;
+
+    margin-top: 10px;
 }
 
-/*============================================ word_section =============================================== */
+#word_section_repeat_the_words {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+
+    display: none;
+
+    margin: 40px auto;
+}
+
+#button_repeat_the_words {
+    width: 250px;
+    height: 50px;
+}
+
+/*============================================ word_section_2 =============================================== */
 
 /*============================================ button_section ============================================= */
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+}
+
+.checkbox_text {
+    font-size: 25px;
+}
 
 #button_section {
     position: relative;
 }
 
-#button_section_start_btn1_1 {
-    width: 170px;
+#button_section_repeat_the_word {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 270px;
+}
+
+#button_section_start {
+    width: 355px;
     height: 40px;
     font-size: 18px;
     font-weight: bold;
@@ -179,53 +298,66 @@ ul {
 
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 480px;
 }
 
-#button_section_the_next_word_btn1_2 {
+#button_section_the_next_word_1 {
     width: 170px;
     height: 40px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 
     display: none;
 
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 480px;
 }
 
-#button_section_show_how_it_reads_btn2_1 {
+#button_section_the_next_word_2 {
     width: 170px;
     height: 40px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 
     display: none;
 
     position: absolute;
     top: 10px;
-    left: 200px;
+    left: 480px;
 }
 
-#button_section_hide_how_to_read_btn2_2 {
+#button_section_translate_1 {
     width: 170px;
     height: 40px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
 
     display: none;
 
     position: absolute;
     top: 10px;
-    left: 200px;
+    left: 660px;
+}
+
+#button_section_translate_2 {
+    width: 170px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 660px;
 }
 
 
-#button_section_show_additional_information_btn3_1 {
+#button_section_additional_information_1 {
     width: 160px;
     height: 40px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 
     display: none;
@@ -235,10 +367,10 @@ ul {
     right: 0;
 }
 
-#button_section_hide_additional_information_btn3_2 {
+#button_section_additional_information_2 {
     width: 160px;
     height: 40px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 
     display: none;
@@ -246,6 +378,110 @@ ul {
     position: absolute;
     top: 10px;
     right: 0;
+}
+
+#button_section_number_of_words_1 {
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+#button_section_number_of_words_2 {
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+#button_section_change_mode_1 {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: block;
+
+    position: absolute;
+    top: 70px;
+    left: 130px;
+}
+
+#button_section_change_mode_2 {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 130px;
+}
+
+#button_section_multiple_values_1 {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 580px;
+}
+
+#button_section_multiple_values_2 {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    left: 580px;
+}
+
+#button_section_how_to_read_1 {
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#button_section_how_to_read_2 {
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
 }
 
 /*============================================ button_section ============================================= */
@@ -270,14 +506,63 @@ ul {
     font-size: 20px;
 }
 
-#div_2 p {
-    font-size: 20px;
-    font-weight: bold;
+/*============================= check for the presence of a word ===========================================*/
 
-    margin-left: 20px;
+/*============================= grammy =====================================================================*/
+
+img {
+    width: 1000px;
+    height: 700px;
+    margin-top: 50px;
 }
 
-/*============================= check for the presence of a word ===========================================*/
+/*============================= grammy =====================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
